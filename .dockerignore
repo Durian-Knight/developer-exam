@@ -5,3 +5,6 @@ frontend/dist
 backend/storage/logs/*
 backend/database/*.sqlite
 .git
+backend/bootstrap/cache/*.php
+backend/.phpunit.result.cache
+*.pdf

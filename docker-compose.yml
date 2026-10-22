@@ -18,7 +18,7 @@ services:
       DB_USERNAME: task_manager
       DB_PASSWORD: secret
       SESSION_DRIVER: database
-      CACHE_STORE: database
+      CACHE_STORE: file
       QUEUE_CONNECTION: sync
       FRONTEND_URL: http://localhost:8080
       SEED_DEMO_DATA: "true"
