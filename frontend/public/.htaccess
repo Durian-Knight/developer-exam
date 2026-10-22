@@ -1,0 +1,10 @@
+# Vue Router history mode: serve index.html for any path that isn't a real file,
+# so reloading /tasks/123 works. Copied into dist/ by `vite build`.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
